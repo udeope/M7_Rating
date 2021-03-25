@@ -1,0 +1,53 @@
+/* --- Required CSS (not customizable) --- */
+
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  
+  /* Esconder elementos */
+  .hidden--visually {
+      border: 0;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+      /* height: 1px; */
+      /* margin: -1px; */
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+  }
+  
+  .rating__label {
+    cursor: pointer;
+    color: gray;
+    /* padding-left: 0.50rem; */
+    /* padding-right: 0.50rem; */
+  }
+  
+  .rating__icon::before {
+    content: "★";
+    padding: 1rem;
+  }
+  
+  .rating__input:hover ~ .rating__label {
+    color: lightgray;
+  }
+  
+  .rating__input:checked ~ .rating__label {
+    color: goldenrod;
+  }
+
+  .rating__input:active ~ .rating__laber {
+      color: gray;
+  }
+  
+  body {
+    text-align: center;
+    font-size: 6rem;
+    /* padding: rem rem; */
+    overflow: hidden;
+  }

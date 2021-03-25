@@ -1,25 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap 4 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <title>M7 Rating</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="main.css" />
+    <title>Rating</title>
   </head>
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <!-- Main JS -->
+    <div class="rating">
+      <input
+        class="rating__input hidden--visually"
+        type="radio"
+        id="5-star"
+        name="rating"
+        value="5"
+        required
+      />
+      <label class="rating__label" for="5-star"
+        ><span class="rating__icon" aria-hidden="true"></span
+        ><span class="hidden--visually">5 de 5</span></label
+      >
+      <input
+        class="rating__input hidden--visually"
+        type="radio"
+        id="4-star"
+        name="rating"
+        value="4"
+      />
+      <label class="rating__label" for="4-star"
+        ><span class="rating__icon" aria-hidden="true"></span
+        ><span class="hidden--visually">4 de 5</span></label
+      >
+      <input
+        class="rating__input hidden--visually"
+        type="radio"
+        id="3-star"
+        name="rating"
+        value="3"
+      />
+      <label class="rating__label" for="3-star"
+        ><span class="rating__icon" aria-hidden="true"></span
+        ><span class="hidden--visually">3 de 5</span></label
+      >
+      <input
+        class="rating__input hidden--visually"
+        type="radio"
+        id="2-star"
+        name="rating"
+        value="2"
+      />
+      <label class="rating__label" for="2-star"
+        ><span class="rating__icon" aria-hidden="true"></span
+        ><span class="hidden--visually">2 de 5</span></label
+      >
+      <input
+        class="rating__input hidden--visually"
+        type="radio"
+        id="1-star"
+        name="rating"
+        value="1"
+      />
+      <label class="rating__label" for="1-star"
+        ><span class="rating__icon" aria-hidden="true"></span
+        ><span class="hidden--visually">1 de 5</span></label
+      >
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
